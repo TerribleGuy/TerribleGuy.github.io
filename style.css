@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@keyframes offeranimation {
+    0%, 100%{border: solid 10px #FF7A00;}
+    33%{border: solid 10px #FFF500;}
+    66%{border: solid 10px #0B61A4;}
+}
+
+@keyframes textmove {
+    0%{left: 100%;}
+    70%{left: -5%;}
+    100%{left: 0%;}
+}
+
+body{
+    margin: 0px;
+    background-color: #0B61A4;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.firstImage{
+    width: 100%;
+    height: 732px;
+    background-image: url(Ofis.jpg);
+    background-size:cover;
+    margin-bottom: 100px;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+}
+
+.firstImage2{
+    width: 100%;
+    height: 682px;
+    background-image: url(shop.jpg);
+    background-size:cover;
+    margin-bottom: 100px;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+}
+
+.firstImage3{
+    width: 100%;
+    height: 668px;
+    background-image: url(Brain.jpg);
+    background-size: cover;
+    margin-bottom: 100px;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: 315px;
+    height: 100%;
+    background-color: #FFA700;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: -250px;
+    transition: margin-left 1s, padding-top 1s;
+    padding-top: 70px;
+    z-index: 100;
+    border: solid 5px #000;
+    box-sizing: border-box;
+}
+
+.shop > hr{
+    background-color: darkmagenta;
+}
+
+.plusese > hr{
+    background-color: #C3F500;
+}
+
+.menulogo {
+    width: 50px;
+    height: 50px;
+    -webkit-background-size: 210%;
+    background-size: 210%;
+    background-image: url(logo.png);
+    background-position: -25px -13px;
+    position: absolute;
+    right: 12px;
+    top: 50px;
+    z-index: 10;
+    transition: width 1s, height 1s, background-position 1s, right 1s;
+}
+
+.menutext {
+    width: 300px;
+    text-align: right;
+    margin-right: 12px;
+    font-size: 50px;
+    transition: font-size 1s;
+}
+
+.menuspan {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mt1 {
+    font-size: 55px;
+}
+
+.mt3 {
+    font-size: 44px;
+}
+
+.mt4 {
+    font-size: 63px;
+}
+
+.mt4 > p > a > .menuspan {
+    font-size: 20px;
+}
+
+.header:hover {
+    margin-left: -150px;
+    padding-top: 200px;
+}
+
+.header:hover >.menulogo {
+    width: 150px;
+    height: 150px;
+    background-position: -80px -25px;
+    right: 10px;
+}
+
+.header:hover > .menutext {
+    font-size: 30px;
+}
+
+.starttext {
+    font-size: 90px;
+    color: crimson;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 100px;
+    font-weight: 700;
+    text-shadow: 2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black;
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+    animation: textmove 1s ease-out 1 normal;
+}
+
+.shop {
+    color: cornflowerblue;
+}
+
+.plusese {
+    color: #B1009B;
+}
+
+.line{
+    background-color: blue;
+    width: 1000px;
+    height: 25px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.centerblock{
+    width: 70%;
+    margin: auto;
+    
+}
+
+.mainblock {
+    width: 100%;
+    background-color: #FFA700;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 10px #FFA700;
+    transition: border 0.5s;
+    margin-bottom: 50px;
+}
+
+.mainblock:hover{
+    border: solid 10px green;
+}
+
+.textblock > h1 {
+    text-align: center;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    font-size: 40px;
+}
+
+.textblock > h3 {
+    font-family: Pacifico;
+    font-weight: normal;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.textblock > p {
+    text-align:center;
+    font-size: 20px;
+}
+
+.textblock > ul > li {
+    font-size: 20px;
+}
+
+.stdimg {
+    border: solid 5px #000;
+}
+
+.c1 > .textblock {
+    width: 60%;
+}
+
+.c1 > img {
+    width: 30%;
+}
+
+.lined {
+    text-decoration: line-through;
+}
+
+.offermainblock {
+    width: 100%;
+    background-color: #FFA700;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: solid 10px #FFA700;
+    transition: border 0.5s;
+    margin-bottom: 50px;
+}
+
+.offermainblock:hover{
+    border: solid 10px green;
+}
+
+.shoptext {
+    text-align: center;
+}
+
+.shoptext > h1 {
+    border-right: solid black 3px;
+    border-left: solid black 3px;
+    font-size: 40px;
+}
+
+.shoptext > h3 {
+    font-family: Pacifico;
+    font-weight: normal;
+    margin-top: -20px;
+}
+
+.shoptext > p {
+    font-size: 20px;
+}
+
+.offerblock {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 100px; 
+}
+
+.offer {
+    width: 40%;
+    background-color: 	#A7F43D;
+    box-sizing: border-box;
+    border: solid 10px #FF7A00;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.offer:hover {
+    animation: offeranimation 2s infinite normal;
+}
+
+.offer > h1 {
+    font-size: 35px;
+}
+
+.offer > p {
+    font-size: 20px;
+}
+
+.offer > ul > li {
+    font-size: 20px;
+    text-align: left;
+}
+
+.offerline {
+    width: 100%;
+    height: 7px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.offerbutton{
+    width: 80%;
+    height: 50px;
+    background-color: #E038AD;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 7px #C00086;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.offerbutton > a {
+    width: 100%;
+}
+
+.offerlink1 {
+    display: block;
+    position: relative;
+}
+
+.offerlink2 {
+    display: none;
+    position: relative;
+}
+
+.offerbutton:hover > a >.offerlink1 {
+    display: none;
+}
+
+.offerbutton:hover > a > .offerlink2 {
+    display: block;
+}
+
+.middleblock {
+    width: 45%;
+    background-color: #FFA700;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: solid 10px #FFA700;
+    transition: border 0.5s;
+    text-align: center;
+}
+
+.middleblock:hover{
+    border: solid 10px green;
+}
+
+.flex {
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 50px;
+}
+
+.midpic {
+    border: solid 5px #000;
+    width: 90%;
+}
+
+.lolblock {
+    width: 30%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 50px;
+    font-weight: 900;
+    border: solid 5px #000;
+}
+
+.p > .textblock {
+    width: 60%;
+}
+
+.lolblock > p {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.lolblock:hover > p {
+    opacity: 100;
+}
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    height:contain;
+    background-color: #000;
+}
+
+.footerblock {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footercircle {
+    width: 30px;
+    height: 30px;
+    border: solid 3px #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.footerflex {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.YandexButton {
+    width: 200px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width:1250px){
+    .offerblock{
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .offer {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width:900px){
+    .mainblock{
+        display: block;
+    }
+    
+    .c1 > .textblock {
+        width: 100%;
+    }
+    
+    .c1 > img {
+        width: 100%;
+    }
+    
+    .p > .textblock {
+        width: 100%;
+    }
+    
+    .lolblock {
+        width: 100%;
+    }
+    
+    .flex {
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .middleblock {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
